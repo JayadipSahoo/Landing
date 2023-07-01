@@ -336,4 +336,8 @@ button[type="submit"] {
     font-size: 1rem;
     padding: 5.25rem 4.75rem;
   }
+  .box{
+    display: flex;
+    gap: 1rem;
+  }
 }
