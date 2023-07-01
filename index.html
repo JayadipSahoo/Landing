@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>JOB FREAK ASSIGNMENT</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        </i>JOBFREAK
+      </div>
+
+</nav>
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          
+          <li class="item">
+            <a href="#home" style="text-decoration: none;">
+            <div class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+            </div>
+          </a>
+          </li>
+    
+
+          <li class="item">
+            <a href="#about" style="text-decoration: none;">
+            <div class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">About</span>
+            </div>
+            </a>
+            </li>
+
+          <li class="item">
+            <a href="#contact" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <section class="home" id="home">
+      <h1>Unleash your inner 
+        intern. Join 
+        JOBFREAK today.</h1>
+        <img  class='home_img' src="./Frame.png" alt="">
+        </section>
+
+      <section class="aboutus" >
+          <h2 id ="about">About JOBFREAK</h2>
+          <p>JOBFREAK is the go-to platform that helps passionate souls find the perfect internship. Uncover hundreds of opportunities and take your first step towards building a successful career.</p>
+            <div class="box">
+            <div class="about_box">
+            <h3>500</h3>
+            <h4>Unique internship</h4>
+          </div>
+          <div class="about_box">
+            <h3>300</h3>
+            <h4>Partner Companies</h4>
+          </div>
+          <div class="about_box">
+            <h3>10000</h3>
+            <h4>Happy Interns</h4>
+          </div>
+      </div>
+        <div class="contact" id="contact">
+          <div>
+          <h2>Contact</h2>
+          <form action="" method="post">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+        
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+        
+            <button type="submit">Send Message</button>
+          </form>
+          </div>
+          <div>
+          <img  class='home_img' src="./frame2.png" alt="">
+          </div>
+        </div>
+      </section>
+      
+      
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+    <script>
+      // Function to handle smooth scrolling when a navigation link is clicked
+function smoothScroll(target) {
+  const element = document.querySelector(target);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
+}
+
+// Add event listeners to navigation links
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = event.currentTarget.getAttribute('href');
+    smoothScroll(target);
+  });
+});
+    </script>
+  </body>
+</html>
